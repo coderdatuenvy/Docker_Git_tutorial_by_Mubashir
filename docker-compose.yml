@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  testing:
+    image: pythonbackend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+  huzefa:
+    image: huzefa
+    build:
+      context: ./huzefa
+      dockerfile: ./Dockerfile
